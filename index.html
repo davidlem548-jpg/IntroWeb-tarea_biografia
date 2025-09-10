@@ -152,11 +152,8 @@
     const nombre = document.getElementById("nombre").value;
     const correo = document.getElementById("correo").value;
 
-    // Armamos el cuerpo del mensaje
     const subject = "Contacto desde la página de Ada Lovelace";
     const body = `Hola ${nombre},%0D%0A%0D%0Ate contactamos por tu interés en la página de Ada Lovelace.`;
-
-    // Abrimos mailto al correo que puso el usuario
     window.location.href = `mailto:${correo}?subject=${subject}&body=${body}`;
   });
 </script>
@@ -170,3 +167,4 @@
 </body>
 
 </html>
+
